@@ -35,6 +35,6 @@ public class CardDeliveryServiceTest {
         $("[data-test-id=\"agreement\"]").click();
         $(byText("Забронировать")).click();
         $("[data-test-id=\"notification\"]").shouldBe(visible, Duration.ofSeconds(15))
-                .shouldHave(text("Встреча успешно забронирована на " + deliveryDate(7)));
+                .shouldHave(text("Встреча успешно забронирована на " + deliveryDate(6)));
     }
 }
